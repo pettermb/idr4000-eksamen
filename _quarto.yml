@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "IDR4000-Mappe eksamen"
+  author: "kandidat nummer"
+  date: "11/14/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - 01-Reliabilitet.qmd
+    - 02-Vitenskapsfilosofi.qmd
+    - 03-Labrapport.qmd
+    - 04-Studiedesign.qmd
+    - 05-Repeterte forsøk.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: rescorses/references.bib
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
