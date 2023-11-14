@@ -1,0 +1,206 @@
+# Repeterte forsøk
+
+Introduksjon
+
+Målet med denne studien var å se på effekten av enkle og flere sett trenings protokoller sin effekt på styrke, muskel hypertrofi og fibertype sammensetning. Vi vill også se hvordan disse faktorene vill påvirke kropp sammensettingen til forsøkspersonene, når de går fra å trene lite til mer jevnlig styrketrening. Dette vill alle gi oss en bedre forstålese i for utviklingen i det å trene enkle og flere sett trening.
+
+I denne studien skal vi se på hvordan ulike treningvolum påvirker styrke og muskelvekst. Det er gjort en del tidligere forsking på hvordan en skal bygge opp sine styrke økter. Før vi kan diskutere om det er forskjell mellom ulike sett, så er det viktig å understreke hva vi er ute etter. Vi ønsker å se om hva som kan skape den største framgangen. Når en har sett på dette tidligere, så er det flere studier som har funne at 3 sett gir en større framgang enn hva 1 sett gir [@kramer_effects_1997; @kelly_effect_2007; @radaelli_dose-response_2015] . Vi ser også at det er studier som har sett på enkle vs. flere sett der forsøkspersonen består i sin helhet av kvinner. I den ene studien viste ikke en like klar framgang som studien med mannlige forsøkspersoner. Studien viste framgang i 1RM for begge gruppen som både enkle sett og flere sett. Men vi må i denne studien stille spørsmål om det er forskjell mellom kvinner og menn. Men denne rapporten inneholder en svak statistisk del, som gjør at det er usikker med å trekke konklusjoner ut fra denne rapporten [@kraemer_varied_1995]. Men ser vi på studier med kvinner som er gjort med en erfaring innenfor styrke. Finner vi noe av de samme resultatene som vi ser hos menn. I et hel kropps program så en at fikk en overlegen styrke forbedring hos de som trente 3 sett i sammenligning med 1 sett [@schlumberger_single-_2001].
+
+```{r}
+#| label: "grunnlag"
+#| echo: false 
+#| warning: false
+#| message: false
+#| include: true
+
+library(tidyverse)
+library(exscidata)
+library(lme4)
+library(emmeans)
+library(pbkrtest)
+library(lmerTest)
+library(gt)
+
+
+data("strengthvolume")
+data("dxadata")
+
+data <- dxadata %>%
+  select(participant:include, lean.left_leg, lean.right_leg) %>%
+  pivot_longer(names_to = "leg", 
+               values_to = "lean.mass", 
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sex, include, sets, leg, lean.mass) %>%
+  full_join(strengthvolume) %>% 
+  filter(exercise == "legext",
+         !is.na(load)) %>%
+    group_by(participant) %>% 
+    filter(n() == 12) %>% 
+  ungroup() %>%
+  mutate(time = factor(time, levels = c("pre", "session1", "week2", "week5", "week9", "post")),
+         sets = factor(sets, levels = c("single", "multiple")),
+         timec = as.numeric(case_when(time == "pre" ~ 0,
+                                      time == "session1" ~ 0,
+                                      time == "week2" ~ 2,
+                                      time == "week5" ~ 5,
+                                      time == "week9" ~ 9,
+                                      time == "post" ~ 12)))
+```
+
+Metode
+
+Deltakere
+
+For denne studien ble det rekruttert 41 menn og kvinner. Det var enkle kriterier for å kunne passe inn i i utvalget av forsøkspersoner. For å delta måtte en være ikke røykende og mellom 18 og 40 år. En måtte også sette av tid for å kunne gjennomføre 12 uker med trening og tilhørende tester. Det var noen kriterier som ville ekskludere personer fra studien. Personer som ikke tålte bedøvelse, hadde hatt mer enn 1 styrke økt i uka de siste 12 månedene eller hadde muskelskader eller fra tidligere fikk ikke mulighet til å delta. I forbindelse med data analysen ble sju personer utelatt på grunn av en manglende gjennomføring av de 12 ukene med trening.
+
+```{r}
+#| label: tbl-FP
+#| tbl-cap: Forsøkspersoner
+#| echo: false 
+#| warning: false
+#| message: false
+#| include: true
+dxadata %>%
+  select(participant, time, sex, age, height, weight) %>%
+  filter(time != "post") %>%
+  group_by(sex) %>%
+  summarise(Alder = mean(age),
+            Høgde = mean(height), 
+            Vekt = mean(weight)) %>%
+  gt(caption = "Forsøkspersoner") %>%
+  fmt_number(columns = Alder:Vekt, 
+             decimals = 2) %>%
+  cols_label(Alder = md("Alder<br><small>(år)"),
+             Høgde = md("Høgde<br><small>(cm)"),
+             Vekt = md("Vekt<br><small>(kg)")) %>%
+  tab_header(title = "FP karaktristikker") %>%
+  tab_footnote(footnote = "Verdier er i gjennomsnitt")
+```
+
+Trenings intervensjon
+
+For alle 41 forsøkspersonene besto trening av et 12 ukers styrketrenings program for hele kroppen. Alle deltakerne gjennomførte treningen mellom september og november. Treningsøktene ble gjennomført med standardisert oppvarming på 5 min. Før en gjennomførte 10 repetisjoner med armhevinger, sit-ups og rygg hev i maskin og knebøy. Oppvarmingen ble avsluttet med avsluttet et sett med 10 repetisjoner på 50 prosent av 1 RM for hver styrke øvelse. For bein øvelsene ble de gjennomført slik at beina tilfeldig ble tildelt trenings volum, slik at en bruker det en som kontroll for det andre benet. Bein øvelsene som ble gjennomført var en fots beinpress, bein curl, kne extension, en gjorde samme øvelse på begge bein. For foten som hadde fått tildelt 1 sett, ble dette gjort mellom 2 og 3 sett. Utover disse bein øvelsene ble det gjort øvelser for overkropp, dette var bilateral benkpress, ned trekk, så kunne en velge mellom skulder press eller sittende roing. Av disse overkropps øvelsene, ble det gjort 2 sett hver.
+
+Tester
+
+For prosjektet ble det gjort tester innenfor flere områder som hadde relevans for prosjektet. Det blei gjort tester innenfor styrke, tverrsnitt av muskel, kropps sammensetning, hormonelle målinger, biopsi av muskel vev.
+
+Muskelstyrke
+
+For å teste den ensidige isokinetiske og isometriske muskelstyrken ble det brukt dynamometer. Den iskinetic torken ble målt med tre vinkel hastigheter på 60 grader, 120 og 140 grader. For at forsøksperson skal vite hva de går til, så fikk de prøve tre maksimale forsøk før selve testen.
+
+Den maksimale muskelstyrken ble testet ved at hvert av beina ble testet separat i beinpress maskin. Det ble også gjort 1 RM kne ekstensjons maskin. Her ble det også gjort tre oppvarmingsett på submaksimale belastninger. Det var den maksimale verdien for kvar av testene som ble brukt i analysene til slutt. For at de siste øktene ikke skulle påvirke for mye, ble testene ikke gjort før 48 timer etter siste treningsøkt.
+
+Muskel tverrsnitt og kroppsamesetning
+
+En var i denne studien heldig å fikk bruke MRI til å undersøker tverrsnittet av kneekstensorene. En så i dette tilfellet på vastus lateralis, medjalis, intermedius og rectus femoris. Dette ble gjort både før og etter trenings intervensjonen. En fikk analysert analyse av personenes kropp sammensetning ved bruk av DXA. Før både DXA og MRI ble forsøkspersonen bedt å faste for 2 timer og ingen hard fysisk aktivitet 48 timer før testene.
+
+Muskel biopsi
+
+Biopis ble tatt bilateralt fra vastus lateralis. Dette ble gjort under bedøvelse, der en brukt et fjær ladet biopsi instrument(Bård Magnum, Bård, Rud, Norway). Det ble gjort tiltak for å sikre en best mulig rehabilitere, med prøver på samme tidspunkt og at en hadde standardisert måltid på forhånd. Prøvene ble raskt fryst ned, for lagring fram til analysene ble gjort
+
+Dataanalyse og statistikk
+
+Forsøkspersoner som ikke gjennomførte helle treningsperioden, ble ikke inkludert fra den statistiske analysen i etterkant av treningsperioden. Vi ønsker i dette tilfellet å se på utviklingen av fettfri masse i beina, mellom 1 og 3 sett. I kombinasjonen med dette ser vi også på hvilket ben som har en størst utvikling i forhold til kor mange sett den trener. Disse tallene er presentert som gjennomsnitt med standardavvik. Vi bruker en tosidig t-test for å se om det er en signifikant forskjell mellom de to beina, for den fettfrie massen.
+
+Resultat
+
+Som vi ser ut i fra @fig-FM så er det en økning for både for beinet som trente 1 sett og beine som trente flere sett. Vi får en signifikant forskjell mellom et sett og flere sett med en p verdi på 0,0359.
+
+```{r}
+#| warning: FALSE
+#| message: FALSE
+#| include: false
+
+# Load data
+datlean <- dxadata %>%
+  select(participant:include, lean.left_leg, lean.right_leg) %>%
+  pivot_longer(names_to = "leg", 
+               values_to = "lean.mass", 
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sex, include, sets, leg, lean.mass) %>%
+        filter(include == "incl") %>%
+        pivot_wider(names_from = "time", 
+                    values_from = "lean.mass") %>%
+        mutate(change = post - pre) %>%
+        select(participant:sets, change) %>%
+        pivot_wider(names_from = sets, values_from = change) %>%
+        
+  print()
+
+### t- test på endringen 
+
+t.test(datlean$multiple, datlean$single, paired = TRUE)
+```
+
+```{r}
+#| label: fig-FM
+#| tbl-cap: Fettfri masse
+#| echo: false 
+#| warning: false
+#| message: false
+#| include: true
+
+data("dxadata")
+
+dxadata %>%
+  select(participant:include, lean.left_leg, lean.right_leg) %>%
+  pivot_longer(names_to = "leg", 
+               values_to = "lean.mass", 
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sex, include, sets, leg, lean.mass) %>%
+  filter(time %in% c("pre", "post")) %>%
+  group_by(time, sets) %>%
+  summarise(m = mean(lean.mass)) %>%
+  mutate(time = factor(time, levels = c("pre", "post"))) %>%
+  ggplot(aes(time, m, color = sets,
+             group = sets)) + geom_line() +
+  labs(x = "Test tidspunkt",
+       y = "Lean mass",
+       color = "Set")
+```
+
+```{r}
+#| label: fig-2
+#| tbl-cap: Figur 2 Utvikling 1 RM knee ekstensjon
+#| echo: false 
+#| warning: false
+#| message: false
+#| include: true
+
+data %>% 
+  group_by(time, sets) %>% 
+  summarise(Mean = mean(load, na.rm = T),
+            SD = sd(load, na.rm = T)) %>% 
+  mutate(timec = as.numeric(case_when(time == "pre" ~ 0,
+                                      time == "session1" ~ 0,
+                                      time == "week2" ~ 2,
+                                      time == "week5" ~ 5,
+                                      time == "week9" ~ 9,
+                                      time == "post" ~ 12))) %>% 
+  ggplot(aes(timec, Mean, group = sets, color = sets)) +
+  geom_line(position = position_dodge(width = 0.7)) +
+  geom_point(position = position_dodge(width = 0.7),
+             size = 3) +
+  geom_errorbar(aes(ymin = Mean - SD, ymax = Mean + SD), 
+                position = position_dodge(width =0.7),
+                width = 0.7) +
+  scale_x_continuous(breaks = seq(0, 16, 1)) +
+  scale_y_continuous(breaks = seq(40, 130, 10)) +
+  labs(x = "Tid (uker)",
+       y = "1RM Kneekstensjon (kg)",
+       color = "Treningsvolum") +
+  theme_classic()
+```
+
+I @fig-2 ser vi 1 RM verdier i kne ekstensjon der en har gjort tester ved pre test, økt 1, i trenings uke 2, 5 og 9 og ved post test. Vi ser at det er liten forskjell i starten av trenings intervensjonen, før en ser at de som har trent flere sett har en større økning. T -test bør inn her
+
+Diskusjon
+
+Utgangspunktet for denne studien var å se på forskjellen mellom enkle og flere sett, og hvordan de ville påvirke flere forskjellige faktorer. Gjennom vår 12 uker lange periode med styrketrening, har vi sett at 3 sett gir signifikant større framgang enn 1 sett i fett fri masse. Vi har også sett at 3 sett gir en større framgang i 1 RM kne ekstensjon, men at dette ikke er noe signifikant forskjell mellom 1 og 3 sett. Noe som samsvarer med resultatene vi finner i tidligere studier. Der alle har sett at det et større trenings volum vil være med på å skape en større framgang enn mindre trenings volum[@kraemer_varied_1995], [@schlumberger_single-_2001], [@kelly2007]. Selv om vi i vår studie inkluderte beintreningen i et fullkroppprogram, så ble det ikke trent forskjellige repetisjoner for armene. Det ble heller ikke gjort testing av muskel styrken, slik at vi ikke vet om dette er noe som kan bekreftes for overkropp.

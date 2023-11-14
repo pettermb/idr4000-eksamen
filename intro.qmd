@@ -1,0 +1,8 @@
+# Introduction
+
+Dette er eksamen i IDR4000 for kandidat
+
+
+Git fil for denne innleveringen finner du her:
+
+
