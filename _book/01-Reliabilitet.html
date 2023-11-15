@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IDR4000-Mappe eksamen - 2&nbsp; Reliabilitet</title>
+<title>IDR4000-Mappeeksamen - 1&nbsp; Reliabilitet og reproduserbar dataanalyse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -65,7 +50,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./02-Vitenskapsfilosofi.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-Reliabilitet.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Reliabilitet</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-Reliabilitet.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reliabilitet og reproduserbar dataanalyse</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -125,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">IDR4000-Mappe eksamen</a> 
+      <a href="./">IDR4000-Mappeeksamen</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -143,44 +128,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./01-Reliabilitet.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Reliabilitet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reliabilitet og reproduserbar dataanalyse</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-Vitenskapsfilosofi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Vitenskapsfilosofi</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vitenskapsfilosofi</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-Labrapport.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Labrapport</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Labrapport</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-Studiedesign.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Studiedesign</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Studiedesign</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-Repeterte forsøk.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Repeterte forsøk</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Repeterte forsøk</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -199,20 +172,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduksjon" id="toc-introduksjon" class="nav-link active" data-scroll-target="#introduksjon"><span class="header-section-number">2.1</span> Introduksjon</a></li>
-  <li><a href="#metode" id="toc-metode" class="nav-link" data-scroll-target="#metode"><span class="header-section-number">2.2</span> Metode</a>
+  <li><a href="#introduksjon" id="toc-introduksjon" class="nav-link active" data-scroll-target="#introduksjon"><span class="header-section-number">1.1</span> Introduksjon</a></li>
+  <li><a href="#metode" id="toc-metode" class="nav-link" data-scroll-target="#metode"><span class="header-section-number">1.2</span> Metode</a>
   <ul class="collapse">
-  <li><a href="#forsøkspersonene" id="toc-forsøkspersonene" class="nav-link" data-scroll-target="#forsøkspersonene"><span class="header-section-number">2.2.1</span> Forsøkspersonene</a></li>
-  <li><a href="#studiedesign" id="toc-studiedesign" class="nav-link" data-scroll-target="#studiedesign"><span class="header-section-number">2.2.2</span> Studiedesign</a></li>
-  <li><a href="#kalibrering---klargjøring-til-test" id="toc-kalibrering---klargjøring-til-test" class="nav-link" data-scroll-target="#kalibrering---klargjøring-til-test"><span class="header-section-number">2.2.3</span> Kalibrering - klargjøring til test</a></li>
-  <li><a href="#testprosedyre" id="toc-testprosedyre" class="nav-link" data-scroll-target="#testprosedyre"><span class="header-section-number">2.2.4</span> Testprosedyre</a></li>
-  <li><a href="#datainnsamling-og--behandling" id="toc-datainnsamling-og--behandling" class="nav-link" data-scroll-target="#datainnsamling-og--behandling"><span class="header-section-number">2.2.5</span> Datainnsamling og -behandling</a></li>
+  <li><a href="#forsøkspersonene" id="toc-forsøkspersonene" class="nav-link" data-scroll-target="#forsøkspersonene"><span class="header-section-number">1.2.1</span> Forsøkspersonene</a></li>
+  <li><a href="#studiedesign" id="toc-studiedesign" class="nav-link" data-scroll-target="#studiedesign"><span class="header-section-number">1.2.2</span> Studiedesign</a></li>
+  <li><a href="#kalibrering---klargjøring-til-test" id="toc-kalibrering---klargjøring-til-test" class="nav-link" data-scroll-target="#kalibrering---klargjøring-til-test"><span class="header-section-number">1.2.3</span> Kalibrering - klargjøring til test</a></li>
+  <li><a href="#testprosedyre" id="toc-testprosedyre" class="nav-link" data-scroll-target="#testprosedyre"><span class="header-section-number">1.2.4</span> Testprosedyre</a></li>
   </ul></li>
-  <li><a href="#resultater" id="toc-resultater" class="nav-link" data-scroll-target="#resultater"><span class="header-section-number">2.3</span> Resultater</a></li>
-  <li><a href="#diskusjon" id="toc-diskusjon" class="nav-link" data-scroll-target="#diskusjon"><span class="header-section-number">2.4</span> Diskusjon</a>
+  <li><a href="#diskusjon" id="toc-diskusjon" class="nav-link" data-scroll-target="#diskusjon"><span class="header-section-number">1.3</span> Diskusjon</a>
   <ul class="collapse">
-  <li><a href="#diskusjon-av-resultater" id="toc-diskusjon-av-resultater" class="nav-link" data-scroll-target="#diskusjon-av-resultater"><span class="header-section-number">2.4.1</span> Diskusjon av resultater</a></li>
-  <li><a href="#tiltak-for-å-sikre-god-reliabilitet" id="toc-tiltak-for-å-sikre-god-reliabilitet" class="nav-link" data-scroll-target="#tiltak-for-å-sikre-god-reliabilitet"><span class="header-section-number">2.4.2</span> Tiltak for å sikre god reliabilitet</a></li>
+  <li><a href="#diskusjon-av-resultater" id="toc-diskusjon-av-resultater" class="nav-link" data-scroll-target="#diskusjon-av-resultater"><span class="header-section-number">1.3.1</span> Diskusjon av resultater</a></li>
+  <li><a href="#tiltak-for-å-sikre-god-reliabilitet" id="toc-tiltak-for-å-sikre-god-reliabilitet" class="nav-link" data-scroll-target="#tiltak-for-å-sikre-god-reliabilitet"><span class="header-section-number">1.3.2</span> Tiltak for å sikre god reliabilitet</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -222,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Reliabilitet</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reliabilitet og reproduserbar dataanalyse</span></h1>
 </div>
 
 
@@ -237,86 +208,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="introduksjon" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="introduksjon"><span class="header-section-number">2.1</span> Introduksjon</h2>
-<p>Hensikten med denne studien er å finne ut hvor reproduserbar en VO<span class="math inline">\(_{2maks}\)</span>-test på sykkel er. Dette er interessant fordi bedre reliabilitet betyr at vi kan stole enda mer på de resultatene vi får fra enkelttester. Da kan vi med stole enda mer på de resultatene vi får når enkelttester i en fysiologisk testlabb brukes for å måle endringer over tid <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref"><strong>hopkins2000?</strong></a>)</span>.</p>
-<p>Faktorer som påvirker reproduserbarheten av testen gjelder dagsvariasjoner hos forsøkspersonene, men også variasjoner i måleinstrumentene, samt hvordan vi instruerer underveis. Derfor var gjennomføringen av testene et sentralt fokus i gjennomføringen for å sikre et best mulig mål på reliabiliteten til testen. Basert på størrelsen på utvalget av testpersoner og vår erfaring med gjennomføring av fysiologisk tester så visste vi på forhånd at vi må være forsiktige med å trekke konklusjoner om målevariasjonen til oksygenanalysatoren som ble benyttet. Men vi får et svar på hvordan reproduserbarheten til testen er med de gitte premissene.</p>
+<section id="introduksjon" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduksjon"><span class="header-section-number">1.1</span> Introduksjon</h2>
+<p>Hensikten med denne studien er å finne ut hvor reproduserbar en VO<span class="math inline">\(_{2maks}\)</span>-test på sykkel er. Dette er interessant fordi bedre reliabilitet betyr at vi kan stole enda mer på de resultatene vi får fra enkelttester. Da kan vi stole enda mer på de resultatene vi får når enkelttester i en fysiologisk testlabb brukes for å måle endringer over tid <span class="citation" data-cites="hopkins_progressive_2009">(<a href="references.html#ref-hopkins_progressive_2009" role="doc-biblioref">Hopkins et al. 2009</a>)</span>.</p>
+<p>Faktorer som påvirker reproduserbarheten av testen gjelder dagsvariasjoner hos forsøkspersonene, men også variasjoner i måleinstrumentene, samt hvordan vi instruerer underveis. Derfor var gjennomføringen av testene et sentralt fokus i gjennomføringen for å sikre et best mulig mål på reliabiliteten til testen. Basert på størrelsen på utvalget av testpersoner og vår erfaring med gjennomføring av fysiologisk tester, så visste vi på forhånd at vi måtte være forsiktige med å trekke konklusjoner om målevariasjonen til oksygenanalysatoren. Uansett får vi et svar på hvordan reproduserbarheten til testen er med de gitte premissene.</p>
 </section>
-<section id="metode" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="metode"><span class="header-section-number">2.2</span> Metode</h2>
-<section id="forsøkspersonene" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="forsøkspersonene"><span class="header-section-number">2.2.1</span> Forsøkspersonene</h3>
-<p>Syv mannlige deltaker ble rekruttert til prosjektet (alder = 25,7 ± 7 år, vekt = 75,7 ± 10,8 kg, høyde = 181,3 ± 6,7 cm). Alle deltakerne trener regelmessig, men erfaring med trening på sykkel varierte innad i gruppa. Ingen av dem hadde noe særlig erfaring med sykkeltestene vi gjennomførte.</p>
+<section id="metode" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="metode"><span class="header-section-number">1.2</span> Metode</h2>
+<section id="forsøkspersonene" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="forsøkspersonene"><span class="header-section-number">1.2.1</span> Forsøkspersonene</h3>
+<p>Syv mannlige deltaker ble rekruttert til prosjektet (alder = 25.7 ± 7 år, vekt = 75.7 ± 10.8 kg, høyde = 181.3 ± 6.7 cm) (<a href="#tbl-karakteristikker">Table&nbsp;<span>1.1</span></a>). Alle deltakerne trente regelmessig, men erfaring med trening på sykkel varierte innad i gruppa. Ingen hadde noe særlig erfaring med sykkeltestene vi gjennomførte.</p>
+<div style="page-break-after: always;"></div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.3     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.4     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.0
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl) </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>reablitet2 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/reablitet2.xls"</span>) </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">invisible</span>(<span class="fu">Sys.setlocale</span>(<span class="at">category =</span> <span class="st">"LC_ALL"</span>, <span class="at">locale =</span> <span class="st">"en_US.UTF-8"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>reablitet2 <span class="sc">|&gt;</span> </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(timepoint <span class="sc">==</span> <span class="st">"t1"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(timepoint, age<span class="sc">:</span>bodymass, vo2.rel.max, w.max) <span class="sc">|&gt;</span> </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">!</span>timepoint,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"variabler"</span>, </span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"verdier"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">variabel =</span> <span class="fu">factor</span>(variabler, </span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                           <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"age"</span>, </span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"bodyheight"</span>, </span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"bodymass"</span>, </span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"vo2.rel.max"</span>, </span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"w.max"</span>), </span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                           <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Alder (år)"</span>, </span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"Høyde (cm)"</span>, </span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"Vekt (kg)"</span>, </span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"VO2maks"</span>, </span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">"Wmaks"</span>)))  <span class="sc">|&gt;</span> </span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(verdier), </span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            <span class="at">s =</span> <span class="fu">sd</span>(verdier), </span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> variabel) <span class="sc">|&gt;</span> </span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">decimals =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_merge</span>(<span class="at">columns =</span> <span class="fu">c</span>(m, s), </span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>             <span class="at">pattern =</span> <span class="st">"{1} \u00b1 {2}"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(<span class="at">variabel =</span> <span class="st">""</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(<span class="at">m =</span> <span class="st">""</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_footnote</span>(<span class="at">footnote =</span> <span class="fu">md</span>(<span class="st">"*Dataene er presentert som gjennomsnitt &amp;plusmn; standardavvik.*"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(<span class="st">"Karakteristikker av forsøkspersonene basert på første test"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
+<div id="tbl-karakteristikker" class="anchored">
 
-<div id="bcvexipceh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bcvexipceh table {
+<div id="xpgjhvpuke" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xpgjhvpuke table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bcvexipceh thead, #bcvexipceh tbody, #bcvexipceh tfoot, #bcvexipceh tr, #bcvexipceh td, #bcvexipceh th {
+#xpgjhvpuke thead, #xpgjhvpuke tbody, #xpgjhvpuke tfoot, #xpgjhvpuke tr, #xpgjhvpuke td, #xpgjhvpuke th {
   border-style: none;
 }
 
-#bcvexipceh p {
+#xpgjhvpuke p {
   margin: 0;
   padding: 0;
 }
 
-#bcvexipceh .gt_table {
+#xpgjhvpuke .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -342,12 +265,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_caption {
+#xpgjhvpuke .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bcvexipceh .gt_title {
+#xpgjhvpuke .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -359,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#bcvexipceh .gt_subtitle {
+#xpgjhvpuke .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -371,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#bcvexipceh .gt_heading {
+#xpgjhvpuke .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -383,13 +306,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_bottom_border {
+#xpgjhvpuke .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_col_headings {
+#xpgjhvpuke .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -404,7 +327,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_col_heading {
+#xpgjhvpuke .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -424,7 +347,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#bcvexipceh .gt_column_spanner_outer {
+#xpgjhvpuke .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,15 +359,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#bcvexipceh .gt_column_spanner_outer:first-child {
+#xpgjhvpuke .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bcvexipceh .gt_column_spanner_outer:last-child {
+#xpgjhvpuke .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bcvexipceh .gt_column_spanner {
+#xpgjhvpuke .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -456,11 +379,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#bcvexipceh .gt_spanner_row {
+#xpgjhvpuke .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bcvexipceh .gt_group_heading {
+#xpgjhvpuke .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -486,7 +409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#bcvexipceh .gt_empty_group_heading {
+#xpgjhvpuke .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -501,15 +424,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#bcvexipceh .gt_from_md > :first-child {
+#xpgjhvpuke .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bcvexipceh .gt_from_md > :last-child {
+#xpgjhvpuke .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bcvexipceh .gt_row {
+#xpgjhvpuke .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -528,7 +451,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#bcvexipceh .gt_stub {
+#xpgjhvpuke .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -541,7 +464,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bcvexipceh .gt_stub_row_group {
+#xpgjhvpuke .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -555,15 +478,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#bcvexipceh .gt_row_group_first td {
+#xpgjhvpuke .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bcvexipceh .gt_row_group_first th {
+#xpgjhvpuke .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bcvexipceh .gt_summary_row {
+#xpgjhvpuke .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -573,16 +496,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bcvexipceh .gt_first_summary_row {
+#xpgjhvpuke .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_first_summary_row.thick {
+#xpgjhvpuke .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bcvexipceh .gt_last_summary_row {
+#xpgjhvpuke .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -592,7 +515,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_grand_summary_row {
+#xpgjhvpuke .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -602,7 +525,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bcvexipceh .gt_first_grand_summary_row {
+#xpgjhvpuke .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -612,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_last_grand_summary_row_top {
+#xpgjhvpuke .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -622,11 +545,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_striped {
+#xpgjhvpuke .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bcvexipceh .gt_table_body {
+#xpgjhvpuke .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -635,7 +558,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_footnotes {
+#xpgjhvpuke .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -649,7 +572,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_footnote {
+#xpgjhvpuke .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -658,7 +581,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bcvexipceh .gt_sourcenotes {
+#xpgjhvpuke .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -672,7 +595,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bcvexipceh .gt_sourcenote {
+#xpgjhvpuke .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -680,67 +603,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bcvexipceh .gt_left {
+#xpgjhvpuke .gt_left {
   text-align: left;
 }
 
-#bcvexipceh .gt_center {
+#xpgjhvpuke .gt_center {
   text-align: center;
 }
 
-#bcvexipceh .gt_right {
+#xpgjhvpuke .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bcvexipceh .gt_font_normal {
+#xpgjhvpuke .gt_font_normal {
   font-weight: normal;
 }
 
-#bcvexipceh .gt_font_bold {
+#xpgjhvpuke .gt_font_bold {
   font-weight: bold;
 }
 
-#bcvexipceh .gt_font_italic {
+#xpgjhvpuke .gt_font_italic {
   font-style: italic;
 }
 
-#bcvexipceh .gt_super {
+#xpgjhvpuke .gt_super {
   font-size: 65%;
 }
 
-#bcvexipceh .gt_footnote_marks {
+#xpgjhvpuke .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bcvexipceh .gt_asterisk {
+#xpgjhvpuke .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bcvexipceh .gt_indent_1 {
+#xpgjhvpuke .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bcvexipceh .gt_indent_2 {
+#xpgjhvpuke .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bcvexipceh .gt_indent_3 {
+#xpgjhvpuke .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bcvexipceh .gt_indent_4 {
+#xpgjhvpuke .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bcvexipceh .gt_indent_5 {
+#xpgjhvpuke .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;1.1:  <p>Dataene er presentert som gjennomsnitt ± standardavvik.</p> </caption>
   <thead>
     <tr class="gt_heading">
       <td colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Karakteristikker av forsøkspersonene basert på første test</td>
@@ -764,77 +687,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td headers="m" class="gt_row gt_right">410.0 ± 58.9</td></tr>
   </tbody>
   
-  <tfoot class="gt_footnotes">
-    <tr>
-      <td class="gt_footnote" colspan="2"> <em>Dataene er presentert som gjennomsnitt ± standardavvik.</em></td>
-    </tr>
-  </tfoot>
+  
 </table>
 </div>
 </div>
 </div>
+</div>
 </section>
-<section id="studiedesign" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="studiedesign"><span class="header-section-number">2.2.2</span> Studiedesign</h3>
-<p>Prosjektets testdager bestod av fire dager, der halvparten av gruppa ble testen hver dag. Testdag 1 og 2 ble gjennomført som test 1 (t1), mens testdag 3 og 4 ble gjennomført som test 2 (t2). «Hviledagen» til forsøkspersonene ble avholdt til rolig trening eller hvile. Grunnen var for å sikre at de var tilnærmet likt restituert før hver test. Det ble forsøkt å gjøre testdagene så identiske som mulig for alle deltakerne, i form av bruk av samme testleder på hver test (ett unntak pga. logistiske utfordringer for testleder), likt tidspunkt på døgnet ± 2 timer, beskjed om likt måltid og til samme tid før test <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref"><strong>hopkins2000?</strong></a>)</span>.</p>
+<section id="studiedesign" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="studiedesign"><span class="header-section-number">1.2.2</span> Studiedesign</h3>
+<p>Prosjektets testdager bestod av fire dager, der halvparten av gruppa ble testet hver dag. Testdag 1 og 2 ble gjennomført som test 1 (t1), mens testdag 3 og 4 ble gjennomført som test 2 (t2). «Hviledagen» til forsøkspersonene bestod av rolig trening eller hvile. Dette var for å sikre at de var tilnærmet likt restituert før hver test. Testdagene prøvde vi å ha så identiske som mulig for alle deltakerne, i form av bruk av samme testleder på hver test (ett unntak pga. logistiske utfordringer for testleder), likt tidspunkt på døgnet ± 2 timer, ga dem beskjed om at siste måltid skulle være det samme og like lenge før test <span class="citation" data-cites="hopkins_progressive_2009">(<a href="references.html#ref-hopkins_progressive_2009" role="doc-biblioref">Hopkins et al. 2009</a>)</span></p>
 </section>
-<section id="kalibrering---klargjøring-til-test" class="level3" data-number="2.2.3">
-<h3 data-number="2.2.3" class="anchored" data-anchor-id="kalibrering---klargjøring-til-test"><span class="header-section-number">2.2.3</span> Kalibrering - klargjøring til test</h3>
-<p>Det ble gjennomført kalibrering av oxycon pro før test for hver forsøksperson. Det ble sørget for at luftfuktigheten og temperaturen i rommet stemte overens med oxycon sin estimering. Godkjenning av volum- og gass kalibrering ble satt til 1% for å minimere eventuelle feilmålinger.<br>
-I tillegg ble Lode Excalibur-sykkelen likt innstilt for hver person på t1 og t2.</p>
+<section id="kalibrering---klargjøring-til-test" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="kalibrering---klargjøring-til-test"><span class="header-section-number">1.2.3</span> Kalibrering - klargjøring til test</h3>
+<p>Før hver test til forsøkspersonene kalibrerte vi Oxycon Pro. Vi sjekket at luftfuktigheten og temperaturen i rommet stemte overens med Oxycon sin estimering. Godkjenning av volum- og gasskalibrering var ± 1% for å minimere eventuelle feilmålinger. I tillegg ble Lode Excalibur-sykkelen innstilt likt ved t1 og t2.</p>
 </section>
-<section id="testprosedyre" class="level3" data-number="2.2.4">
-<h3 data-number="2.2.4" class="anchored" data-anchor-id="testprosedyre"><span class="header-section-number">2.2.4</span> Testprosedyre</h3>
-<p>Deltakerne startet med en syv minutters lang oppvarming på ergometer sykkel, med en gradvis økning i intensitet. Intensiteten ble styrt etter Borgs 6-20 skala. De syklet 3 min tilsvarende opplevd anstrengelse på 11, 2 min på 13 og 2 min på 15/16 på Borgs 6-20 skala <span class="citation" data-cites="borg1998">(<a href="references.html#ref-borg1998" role="doc-biblioref"><strong>borg1998?</strong></a>)</span>.</p>
-<p>Del 1 styrketest: Etter oppvarming gjennomførte deltakerne en kort styrketest, i form av knebøy power test. Den bestod av tre løft med 20 kg, tre løft med henholdsvis 30-, 60- og 75 % av egen kroppsvekt. Målet var å gjennomføre løftet så huritig som mulig, og kraftutviklingen ble målt med en muscle lab hastighetsmåler. Beste forsøk på hver belastning ble tellende. Vi går ikke noe mer inn på styrketesten, fordi det er på sykkeltesten vi har gjort analyser.</p>
-<p>Del 2 sykkeltester: Deltakerne gikk direkte fra styrketesten til sykkeltestene. Her gjennomførte de en tredelt test, som først bestod av to submaksimale drag, deretter en VO<span class="math inline">\(_{2maks}\)</span>-test og til slutt en Maximal Accumulated Oxygen Deficit (MAOD)-test. Grunnen til at vi kjørte de submaksimale dragene var for å estimere okysgenkrav på wattbelasning som ble syklet under MAOD-testen.</p>
-<p>Under hele sykkeltesten prøvde vi å kjøre mest mulig lik tilbakemelding og engasjement hver gang. Det var lite tilbakemeldinger under de submaksimale dragene, og mye engasjement og kun nødvendig informasjon under VO<span class="math inline">\(_{2maks}\)</span>-testen, spesielt mot slutten. Vi ga ingen opplysninger om oksygenopptak (VO2) underveis, men de fikk vite wattbelastning. I tillegg til at de hele tiden kunne se tråkkfrekvensen under alle testene. Vi fikk O<span class="math inline">\(_2\)</span>-målinger hvert 30.sek som vi noterte ned (både på VO<span class="math inline">\(_{2maks}\)</span>-testen og MAOD-testen), i tillegg til at vi noterte ned watt, tråkkfrekvens, puls og lengden på de to siste testene.</p>
-<section id="submaksimale-drag" class="level4" data-number="2.2.4.1">
-<h4 data-number="2.2.4.1" class="anchored" data-anchor-id="submaksimale-drag"><span class="header-section-number">2.2.4.1</span> Submaksimale drag</h4>
-<p>Den submaksimale testen bestod av to drag på fire minutter. For seks av deltakerne ble første belastning på testen gjennomført med en effekt (W) på 100 W og andre belastning på 150 W, mens én deltaker syklet på 75 W og 125 W. Tilpasningene ble gjort for å få en mer optimal test. Forsøkspersonene syklet med neseklype og munnstykket i de siste to minuttene av hvert drag (begynte å ta i da det hadde gått 1,5 min). Deltakerne skulle holde en tråkkfrekvens på 90-100 rpm. Hver belastning ble gjennomført på samme måte, og gikk direkte over i hverandre. Vi spurte om Borgs-skala etter hvert drag. Etter dragene var det to minutter pause der deltakerne satt helt i ro.Tråkkfrekvensen til en bestemt deltaker ble reprodusert på alle andre submaksimale drag og under MAOD-testen så lenge de klarte.</p>
-</section>
-<section id="vo_2maks-test" class="level4" data-number="2.2.4.2">
-<h4 data-number="2.2.4.2" class="anchored" data-anchor-id="vo_2maks-test"><span class="header-section-number">2.2.4.2</span> VO<span class="math inline">\(_2maks\)</span>-test</h4>
-<p>VO<span class="math inline">\(_{2maks}\)</span>-testen startet for de fleste på 200 W, og økte med 25 W hvert minutt helt til utmattelse. For deltakeren som hadde litt lavere effekt på de submaksimale dragene startet VO<span class="math inline">\(_{2maks}\)</span>-testen på 150 W. Testen var ferdig da tråkkfrekvens var &lt; 60 rpm. Det var fri tråkkfrekvens og vi målte oksygenopptaket under hele testen. Vi spurte om Borgs-skala rett etter VO<span class="math inline">\(_{2maks}\)</span>-testen. Etter avsluttet test fikk forsøkspersonen fem minutter pause. Det første minuttet etter avsluttet test satt personen helt i ro, mens de neste fire minuttene ble gjennomført som rolig sykling på 50 W. Valgfri tråkkfrekvens, men den skulle være lik under pausen på t2.</p>
-</section>
-<section id="maod-test" class="level4" data-number="2.2.4.3">
-<h4 data-number="2.2.4.3" class="anchored" data-anchor-id="maod-test"><span class="header-section-number">2.2.4.3</span> MAOD-test</h4>
-<p>MAOD-testens starteffekt baserte seg på VO<span class="math inline">\(_{2maks}\)</span>-testen. Effekten de startet på var den siste belastningen deltakeren syklet 30.sek eller mer på under VO2maks-testen. Den belastningen som ble brukt under t1 ble også brukt på t2 uavhengig av hvordan de presterte på VO<span class="math inline">\(_{2maks}\)</span>-test ved t2. Deltakerne syklet med neseklype og munnstykket under hele testen, og startet med “flying start” fra 50 W. Belastningen ble satt klart på maskinen, slik at den var klar når testleder ga beskjed om at testen skulle starte. Deltakerne syklet så lenge som mulig, og testen var over når tråkkfrekvensen var &lt; 60. Vi spurte om Borgs-skala rett etter avsluttet test.</p>
-</section>
-</section>
-<section id="datainnsamling-og--behandling" class="level3" data-number="2.2.5">
-<h3 data-number="2.2.5" class="anchored" data-anchor-id="datainnsamling-og--behandling"><span class="header-section-number">2.2.5</span> Datainnsamling og -behandling</h3>
-<p>Etter å ha gjennomført testene samlet vi inn dataene vi skulle bruke for å gjøre statistiske analyser. Vi noterte ned VO2 på de submaksimale dragene, og regnet ut VO2.rel.max og VO2.max på VO2maks-testen i excel. Samtidig noterte vi ned andre verdifulle variabler etter test, slik som hr.max, W.max, rer.max, bf.max, VE.max, hvor lenge personen syklet, og hvilken watt personen avsluttet på, samt opplevd anstrengelse [borg1998].</p>
-<p>Etter MAOD-testen regnet vi ut VO2.max, oksygenkravet ved belastning under MAOD-test (L/min), det totale okysgenkravet som måtte dekkes (L), akkumulert oksygenopptak på testene (L), akkumulert oksygengjeld og prosent av arbeidet som ble dekket anaerobt (%). Samtidig noterte vi ned hvor lenge personen syklet (i sekunder), makspuls og opplevd anstrengelse [borg1998].</p>
-<p>Alle data i resultatkapittelet er presentert som gjennomsnitt ± standardavvik.</p>
-</section>
-</section>
-<section id="resultater" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="resultater"><span class="header-section-number">2.3</span> Resultater</h2>
-<p>For relativ VO<span class="math inline">\(_{2maks}\)</span> var differansen mellom testene 0.62 ± 2.41 <span class="math inline">\(ml·kg^{-1}·min^{-1}\)</span>. Med en typisk målefeil på 1.7, og en variasjonskoefisient (cv) på 2.6. I prosent var det 0.94 ± 3.65 % forskjell.</p>
-<p>For W<span class="math inline">\(_{maks}\)</span> og ventilasjonen er differansen mellom testene henholdsvis 5.71 ± 13.80 W og 2.21 ± 11.42 l/min. Den typiske målefeilen var hhv. 9.8 og 8.1, mens cv var 2.4 og 4.</p>
-<p>Figuren under viser relativ VO<span class="math inline">\(_{2maks}\)</span> ved de to testene. Og linjen går fra gjennomsnittet ved t1 (66.2 ± 7.2) til gjennomsnittet ved t2 (65.6 ± 7.1).</p>
+<section id="testprosedyre" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="testprosedyre"><span class="header-section-number">1.2.4</span> Testprosedyre</h3>
+<p>Deltakerne startet med en syv minutters lang oppvarming på ergometer sykkel, med en gradvis økning i intensitet. Intensiteten ble styrt etter Borgs 6-20 skala <span class="citation" data-cites="borg1998">(<a href="references.html#ref-borg1998" role="doc-biblioref">Borg 1998</a>)</span>. De syklet 3 min tilsvarende opplevd anstrengelse på 11, 2 min på 13 og 2 min på 15/16 på Borgs 6-20 skala.</p>
+<p>Del 1 styrketest: Etter oppvarming gjennomførte deltakerne en kort styrketest (knebøy power test). Den bestod av tre løft med 20 kg (oppvarming), og tre løft med henholdsvis 30-, 60- og 75 % av egen kroppsvekt. Målet var å gjennomføre løftet så hurtig som mulig, og kraftutviklingen ble målt med en muscle lab hastighetsmåler. Beste forsøk på hver belastning ble tellende. Vi går ikke noe mer inn på styrketesten, fordi det er på sykkeltesten vi har gjort analyser.</p>
+<p>Del 2 sykkeltester: Deltakerne gikk direkte fra styrketesten til sykkeltestene. Her gjennomførte de en tredelt test, som først bestod av to submaksimale drag, deretter en VO<span class="math inline">\(_{2maks}\)</span>-test og til slutt en Maximal Accumulated Oxygen Deficit (MAOD)-test. Grunnen til at vi kjørte de submaksimale dragene var for å estimere oksygenkrav på effekten (W) som ble syklet under MAOD-testen.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="01-Reliabilitet_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<div id="fig-reliabilitet" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01-Reliabilitet_files/figure-html/fig-reliabilitet-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1.1: Relativt maksimalt oksygenopptak ved de to testene. Linjen fra fra gjennomsnittet fra første test (t1) til gjennomsnittet fra den andre (t2).</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="diskusjon" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="diskusjon"><span class="header-section-number">2.4</span> Diskusjon</h2>
-<section id="diskusjon-av-resultater" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1" class="anchored" data-anchor-id="diskusjon-av-resultater"><span class="header-section-number">2.4.1</span> Diskusjon av resultater</h3>
-<p>8 forsøkspersoner er et lite utvalg når vi skal måle reliabiliteten til en test [hopkins2000]. Dette gjør at det er mer tilfeldigheter som kan påvirke resultatene våre. Ved første test var VO<span class="math inline">\(_{2maks}\)</span> på 66,2 ± 7,2 ml/kg/min, noe som gjør at de kan defineres som godt trente. Godt trente utøvere vil også produsere høyere wattverdier. Når både oksygenopptak og wattverdier er høyere vil det være desto mer beskrivende å se på variasjonskoefisienten som er prosentvis av gjennomsnittet. Den var på 2.6 og 2.4 for henholdsvis VO<span class="math inline">\(_{2maks}\)</span> og W<span class="math inline">\(_{maks}\)</span>. Med et lite utvalg blir det vanskelig å konkludere noe om reliabiliteten til testen, men det ser ut som vi har gjennomført testene godt med de feilkildene som nevnes i neste delkapittel.</p>
 </section>
-<section id="tiltak-for-å-sikre-god-reliabilitet" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="tiltak-for-å-sikre-god-reliabilitet"><span class="header-section-number">2.4.2</span> Tiltak for å sikre god reliabilitet</h3>
-<p>For å oppnå en størst mulig grad av validitet og reliabilitet er det nødevndig å ta stilling til ytre variabler som kan påvirke resultatet. Ved å ta hensyn til potensielle forstyrrende variabler reduseres risikoen for feilmålinger, og gjør funnene mer pålitelige <span class="citation" data-cites="halperin2015">(<a href="references.html#ref-halperin2015" role="doc-biblioref"><strong>halperin2015?</strong></a>)</span>.</p>
-<p>For å sikre en god reliabilitet på de fysiologiske testene gjorde vi flere tiltak for å redusere risikoen for forstyrrende variabler som kan påvirke resultatene. For det første ble begge testene kjørt på så nøyaktig lik måte som mulig, med en standardisert protokoll. Testene for hver forsøksperson ble avholdt på omtrent samme tidspunkt (± 2 timer). Vi ga også beskjed om at de bare kunne trene rolig dagen før t1, og dagen i mellom testene. På den måten sikret vi at ingen var treningspåvirket og forhåpentligvis likt restituert før hver test. Deltakerne fikk også beskjed om at siste måltid før begge testene skulle være like, og til omtrent samme tidspunkt.</p>
-<p>Vi kjørte også samme tråkkfrekvensen ved første submaksimale belastningstrinn og ved MAOD-testen, og dette ble kopiert ved t2. Det var lik belastning og lengde på pause før hver MAOD-test begge dager uansett utfall på VO<span class="math inline">\(_{2maks}\)</span>-testen. I tillegg ble hele sykkeltesten gjennomført sittende.</p>
-<p>Vi valgte også å ha samme testleder for hver enkelt forsøksperson ved både t1 og t2. Den muntlige oppmuntringen og tilbakemeldingene underveis på testene var lik, og vi sørget for å gi like instruksjoner om utførelsen av testene og målet med hver test. Det ble også kjørt kalibrering av oxycon pro før hver test, og vi satte godkjent kalibrering på volum til ± 1 %, og godkjent kalibrering av gass med en differanse på maksimalt ± 1.0 %. I vårt utvalg av forsøkspersoner, hadde alle gjennomført testing på et fysiologisk testlabratorie før. Så dei var kjent med å puste gjennom slage, men det var liten eller ingen erfaring ved slik testing på sykkel. Dermed ble t1 mye læring for mange av personene, så for å sikre endå betre realbilitet hadde det vert viktig å lett forsøkspersone bli kjent med det å gjennomføre en sykkeltest på forhånd. Et punkt på dette som var usikkert for flere var hvordan de ulike belastningene føltes noe som kunne vert et enkelt tiltak å gjennomføre.</p>
-<p>Studiens testledere hadde også en noe ulik erfaring ved å være testledere. No som ført til noen feil i gjennomføringen av protokollen. Dette var feil som forsøkspersonene ikke oppfattet under veis i deres tester, men som kan ha hatt innvirkning på testresultatet. Vi ser at ved senere studier vil det være hensiktsmessig for reabiliteten til testene, at vi gjennomfører pilottesting, for å bli bedre kjent med gjennomføring. Dette vil i stor grad være det som i literaturen blir referert til som tilfeldig forandring.</p>
+<section id="diskusjon" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="diskusjon"><span class="header-section-number">1.3</span> Diskusjon</h2>
+<section id="diskusjon-av-resultater" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="diskusjon-av-resultater"><span class="header-section-number">1.3.1</span> Diskusjon av resultater</h3>
+<p>8 forsøkspersoner er et lite utvalg når vi skal måle reliabiliteten til en test [<span class="citation" data-cites="hopkins_progressive_2009">(<a href="references.html#ref-hopkins_progressive_2009" role="doc-biblioref">Hopkins et al. 2009</a>)</span>. Dette gjør at det er mer tilfeldigheter som kan påvirke resultatene våre. Ved første test var VO<span class="math inline">\(_{2maks}\)</span> på 66.2 ± 7.2 ml/kg/min, noe som gjør at de kan defineres som godt trente. Godt trente utøvere vil også produsere høyere effekt. Når både oksygenopptak og wattverdier er høyere vil det være desto mer beskrivende å se på CV som sier noe om prosentvis i forhold til gjennomsnittet. Den var på 2.6 og 2.4 for henholdsvis VO<span class="math inline">\(_{2maks}\)</span> og W<span class="math inline">\(_{maks}\)</span>. Med et lite utvalg blir det vanskelig å konkludere noe om reliabiliteten til testen, men det ser ut som vi har gjennomført testene godt med de feilkildene som nevnes i neste delkapittel.</p>
+</section>
+<section id="tiltak-for-å-sikre-god-reliabilitet" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="tiltak-for-å-sikre-god-reliabilitet"><span class="header-section-number">1.3.2</span> Tiltak for å sikre god reliabilitet</h3>
+<p>For å oppnå en størst mulig grad av validitet og reliabilitet er det nødvendig å ta stilling til ytre variabler som kan påvirke resultatet. Ved å ta hensyn til potensielle forstyrrende variabler reduseres risikoen for feilmålinger, og gjør funnene mer pålitelige <span class="citation" data-cites="halperin_threats_2015">(<a href="references.html#ref-halperin_threats_2015" role="doc-biblioref">Halperin, Pyne, and Martin 2015</a>)</span>.</p>
+<p>For å sikre god reliabilitet på de fysiologiske testene hadde vi flere tiltak for å redusere risikoen for forstyrrende variabler som kan påvirke resultatene. For det første ble begge testene gjennomført så likt som mulig, med en standardisert protokoll. Testene for hver forsøksperson ble avholdt på omtrent samme tidspunkt (± 2 timer). Vi ga også beskjed om at de bare kunne trene rolig dagen før t1, og dagen i mellom testene. På den måten var det et tiltak for å sikre at de var restituert før begge testene. Deltakerne fikk også beskjed om at siste måltid før begge testene skulle være like, og til omtrent samme tidspunkt.</p>
+<p>Deltakerne fikk beskjed om å ha samme tråkkfrekvensen ved første submaksimale belastningstrinn og ved MAOD-testen, og dette ble kopiert ved t2. Belastning og lengde på pausen før hver MAOD-test var lik ved begge testene. Det nevnte var svært viktig å ta høyde for, fordi oksygenopptaket varierer med ulik tråkkfrekvens <span class="citation" data-cites="gottshall_cycling_1996">(<a href="references.html#ref-gottshall_cycling_1996" role="doc-biblioref">Gottshall, Bauer, and Fahrner 1996</a>)</span>. Det var lik belastning og lengde på pause før hver MAOD-test begge dager uansett utfall på VO<span class="math inline">\(_{2maks}\)</span>-testen. I tillegg ble hele sykkeltesten gjennomført sittende.</p>
+<p>Vi valgte også å ha samme testleder for hver enkelt forsøksperson ved både t1 og t2. Den muntlige oppmuntringen og tilbakemeldingene underveis på testene var lik, og vi sørget for å gi like instruksjoner om utførelsen av testene og målet med hver test. Det ble også kjørt kalibrering av Oxycon pro før hver test, og vi satte godkjent kalibrering på volum til ± 1 %, og godkjent kalibrering av gass med en differanse på maksimalt ± 1.0 %. I vårt utvalg av forsøkspersoner, hadde alle gjennomført testing på et fysiologisk testlaboratorium før. Så de var kjent med å måle oksygenopptak, men det var liten eller ingen erfaring ved slik testing på sykkel. Dermed ble t1 mye læring for mange av personene, så for å sikre enda bedre reliabilitet hadde det vært viktig å la forsøkspersonene bli kjent med det å gjennomføre en sykkeltest på forhånd. Et punkt på dette som var usikkert for flere var hvordan de ulike belastningene føltes noe som kunne vært et enkelt tiltak å gjennomføre.</p>
+<p>Studiens testledere hadde også en noe ulik erfaring ved å være testledere. Noe som førte til noen feil i gjennomføringen av protokollen. Dette var feil som forsøkspersonene ikke oppfattet underveis i deres tester, men som kan ha hatt innvirkning på testresultatet. Vi ser at ved senere studier vil det være hensiktsmessig for reliabiliteten til testene, at vi gjennomfører pilottesting, for å bli bedre kjent med gjennomføring. Dette vil i stor grad være det som i litteraturen blir referert til som tilfeldig forandring.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-borg1998" class="csl-entry" role="listitem">
+Borg, Gunnar. 1998. <em>Borg’s Perceived exertion and pain scales</em>. Champaign, Ill.: Human Kinetics.
+</div>
+<div id="ref-gottshall_cycling_1996" class="csl-entry" role="listitem">
+Gottshall, R., T. Bauer, and S. Fahrner. 1996. <span>“Cycling <span>Cadence</span> <span>Alters</span> <span>Exercise</span> <span>Hemodynamics</span>.”</span> <em>International Journal of Sports Medicine</em> 17 (01): 17–21. <a href="https://doi.org/10.1055/s-2007-972802">https://doi.org/10.1055/s-2007-972802</a>.
+</div>
+<div id="ref-halperin_threats_2015" class="csl-entry" role="listitem">
+Halperin, Israel, David B. Pyne, and David T. Martin. 2015. <span>“Threats to <span>Internal</span> <span>Validity</span> in <span>Exercise</span> <span>Science</span>: <span>A</span> <span>Review</span> of <span>Overlooked</span> <span>Confounding</span> <span>Variables</span>.”</span> <em>International Journal of Sports Physiology and Performance</em> 10 (7): 823–29. <a href="https://doi.org/10.1123/ijspp.2014-0566">https://doi.org/10.1123/ijspp.2014-0566</a>.
+</div>
+<div id="ref-hopkins_progressive_2009" class="csl-entry" role="listitem">
+Hopkins, William G., Stephen W. Marshall, Alan M. Batterham, and Juri Hanin. 2009. <span>“Progressive <span>Statistics</span> for <span>Studies</span> in <span>Sports</span> <span>Medicine</span> and <span>Exercise</span> <span>Science</span>.”</span> <em>Medicine &amp; Science in Sports &amp; Exercise</em> 41 (1): 3–12. <a href="https://doi.org/10.1249/MSS.0b013e31818cb278">https://doi.org/10.1249/MSS.0b013e31818cb278</a>.
+</div>
+</div>
 </section>
 </section>
 
@@ -1074,13 +987,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Forord</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./02-Vitenskapsfilosofi.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Vitenskapsfilosofi</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vitenskapsfilosofi</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

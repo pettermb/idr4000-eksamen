@@ -1,9 +1,7 @@
 # Forord {.unnumbered}
 
-quaMappe eksamen IDR 4
+Mappeeksamen IDR4000
 
-This is a Quarto book.
+Kandidatnummer 412
 
-test
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Lenke til Github: <https://github.com/pettermb/idr4000-eksamen.git>

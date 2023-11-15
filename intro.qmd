@@ -1,8 +1,9 @@
-# Introduction
+# Introduksjon
 
-Dette er eksamen i IDR4000 for kandidat
+Dette er eksamen i IDR4000 for kandidat 412
 
+En finner alle data for denne oppgaven i denne linken til repositorie på github 
 
-Git fil for denne innleveringen finner du her:
+https://github.com/pettermb/idr4000-eksamen.git
 
 

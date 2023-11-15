@@ -1,1 +1,66 @@
 # Labrapport
+
+## Introduksjon
+
+Denne labrapporten er skrevet ut i fra praktisk læring i molekylær lab, der oppgava var å gjennomføre protein ekstraksjon og analyse av dette. Gjennom dette ønsket vi å undersøke ulike protein, med deres interaksjon, lokasjon og aktiveringsstatus. For å komme fram til dette tok vi i bruk metoden Western blot, som gjorde at vi kunne analyse mengde protein. Dette er en hyppig type som er brukt i idrettsforskning, som en muglegheit for å kunne skaffe seg tilleggsinformasjon i til døme en styrketrenings intervensjon [@bass_overview_2017]. Dette vill kunne gi gode svar på hva som er med på å skape forskjellen i ulike styrke treningsmetoder. For at vi skal bli sterkere ønsker vi i stor grad å øke tverrsnittet av muskelen. Men hva annet skjer i muskelen en at tverrsnittet øker. I en styrketrening studie vil det være interessant å sjå på hva som skjer i muskelen, og her kan utviklinga i proteinene være en ting som kan være svært sentralt å se på. Hvordan er utviklingen hos de ulike proteinene fra pre til post-test, eller hvordan vill en styrke treningsmetodene kunne påvirke en kontroll i ulike ben. I denne lab rapporten skal vi se på utviklinga av target proteinet i et kontroll bein og i et bein som gjennomgår styrketrening. Metodene som blir brukt i denne lab rapporten vil være en del som kan gi oss svar på dette[@raastad2010].
+
+## Metode
+
+For å framstille de ulike proteinene, med deres interaksjon, lokasjon og aktivering status brukte vi to protokoller. Der den ene protokollen var forarbeid for den andre protokollen. Vi starta med å bruke protokollen «General purpose muscle tissue homogenization protocoll(versjon 2019-11-12)». Denne ble brukt for å kunne forberede prøven slik at den kan bli brukt i Western blot. Vi starta protokollen med å ta ut tidligere ned fryste prøver, som skulle brukest i analysen. Denne muskel biopsien ble tatt fra låret(muskel), for å ikke påføre for mye smerte fikk forsøkspersonen lokal bedøvest der en ønsket å ta prøven. Det ble brukt en et fjær lada biopsi instrument for å ta prøvene(Bård Magnum, Bård, Rud, Norway). Siden framstillinga av prøvene ble inneholdt to protokoller, som innehold flere tidkrevende steg tok det tre dager å framstille bilda som gjorde at vi til slutt kunne analysere disse. Med bakgrunn i dette velger vi å beskrive analysere metoden i dag 1, dag 2, dag 3.
+
+### Dag 1:
+
+Analysen starta ved en praktisk gjennomgang av protokollen. En viktig bit av dette var å forberede stega en skulle igjennom, samt å gjøre forberedelser til resten av protokollen. Et viktig steg under hele denne prøven var å kunne holde prøve kalde. Derfor ble det brukt isolerende bokser med is, som prøvene ble satt på i mellom og under stega. Prøvene som vil bli omtalt i denne protokollen er H1 og R2. Steg 1 i protokollen var å veie disse to prøvene, her fikk H1 vekt på 2,33 milligram og R2 på 2,72 gram. Det ble laga ekstrasjonsbuffer med en ripa buffer og med en hepes buffer, kvar av disse ble tilsett en iskald lysis buffer(10 ul/ml). Denne ble blanda ved hjelp av vortex. Vi tilsette denne ekstrasjonsbuffer etter oppgitt blandingsforhold ut i fra vekt av prøven. Ut i fra dette ble det tilsett 198 ul ekstrasjonsbuffer i prøve R2, mens det ble tilsett 186 ul ekstrasjonsbuffer i prøve H2. Vi opplevde tidlig problem med en av prøvene, da vi i steg 4 i protokollen skulle blande prøvene i de tilsette bufferene klarte vi ikke å løse opp prøve H2 skikkelig. Selv kor mye vi «moste» opplevde vi at den ikke ville løse seg helt opp, noe som gjorde det vanskelig å analysere prøven på en god måte, noe som kan være et tein på fett eller bindevev som er igjen i prøven. For å skille ut supernatant fra prøven, ble prøven rotert i kjøleskap i 20 min. Kjøleskapet ble brukt for å holde den riktige temperaturen på prøven. Dette gjorde at vi skilte supernatant og pelleten, dermed kunne vi forsiktig trekke supernatant over i et nytt rør.
+
+Før vi skulle starte på Western blot delen av dag 1 ble protein konsentrasjonen av prøvene målt. Dette ble gjort ved et Bradford Assay standarar med Thermo Science sine retningslinjer. Før disse målingene ønskte vi å unngå bobler i sjølve prøven. Derfor brukte vi pastur pipette til å blåse ut boblene, da opplevde vi at en del av prøvens innhold forflyttet seg fra en brønn til en ann. Vi vet ikke kor mye dette var snakk om eller om det faktisk var noe av prøven fra den aktuelle brønnen som blande seg med en annen prøve. Men vi velger å sjå på det som et avvik fra protokollen. Når mengda protein vart anslått starta vi neste steg, som var å starte protokollen for Western Blot(Determine protein abundance by immunoblotting). Vi valte å starte protokollen neste dag, og prøvene ble oppbevart i kjøleskap over natta, for å sikre at de hadde en god kvalitet.
+
+### Dag 2:
+
+Denne dagen starta med å ta prøvene ut fra kjøleskapet som de hadde stått i over natta. Da den forige protokollen som ble brukt var en forberedelse av prøven for Western blotet, så var det de to prøvene H1 og R2 som var i bruk. Som nemnd innledningsvis vis så var dette to prøver som var litt små når vi skulle veie de. Første steg i protokollen var at prøven skulle flyttes over i ny mikrotube. Prøven var på dette tidspunktet så liten at en ikke fikk flytta den over. Derfor ble prøven liggende i eksisterende «mikrotube», og vi fylte fortynningene direkte i denne mikrotuben. Når vi fylte på med fortynninga fikk vi en blanding som hadde de totale volumet men de er usikkert kor stor del av denne prøven som var reine prøve. Begge prøvene ble varma i 5 minutt på 95 grader, for så å bli avkjølt i rom temperatur. Mens prøven ble avkjølt ble forberedelsene av gelen til Western blot starta. For å sikre at brønnene var reine, blei disse skylt med running buffer. For å forsett sikre riktig temperatur på prøvene ble brønnene satt på is, og protein ladder(5 ul) ble tilsett. Prøven ble tilsett brønner ut i fra pipettering skjema som ble laget på forhånd. Skjema kan en sjå under, der er det brønn 15 til 18 som gjelder for denne oppgava.
+
+| G3      | 1      | 2                  | 3   | 4   | 5   | 11  | 12  | 13  | 14  | 15         | 16     | 17  | 18     |
+|------|------|--------|----|----|----|----|----|----|----|------|------|----|------|
+| Innhold | Ladder | Ladder             |     |     |     |     |     |     |     | H1         | Ladder | R2  | Ladder |
+| Merk.   |        | Feil i pippitering |     |     |     |     |     |     |     | Lite prøve |        |     |        |
+| G4      |        |                    |     |     |     |     |     |     |     |            |        |     |        |
+| Innhold | Ladder | TR                 | UT  |     |     |     |     |     |     |            |        |     |        |
+| Merk.   |        |                    |     |     |     |     |     |     |     |            |        |     |        |
+|         |        |                    |     |     |     |     |     |     |     |            |        |     |        |
+
+: Brønnskjema: Rad 6-11 var uten prøve. Derfor tatt vekk fra skjema.
+
+Som vi ser er H1 en liten prøve, dermed klarte vi ikke å fylle opp brønnen til det som er angitt stander. For å gå gjennomført protokollen innenfor tidsrammene ble det gjort en tilpassing når gelen skulle bli tilsett strøm. Vi valte å ha en sterke strøm (300 V) i en kortere periode, enn mindre spenning i en lengre periode. Dette blei gjort mens prøven sto i kjøleskap for å holde prøven i den angitt temperaturen. Etter 30 min i kjøleskapet ble brønneplaten tatt ut og demontert, slik at vi kunne legge den i transfer buffer i 15 til 30 min. Mens prøven var i transfer buffer starta en å forbereder sandwichen. Svampene ble lagt i dH20 for å bli kvitt eventuelle bobler. En kutta membranen i øvre vestre hjørne, disse ble lagt på rister i etanol i 5 min. Så ble sandwichen satt samen etter retningslinjer og riktig rekke følge, sandwichen ble plassert i transfer boksen, slik at den kunne bli tilsett strøm, dette ble gjort i 30 min med 100 V slik at proteina skulle vandre til membranen. Undervegs forberede vi en løsning innhold deststain og metanol, dette ble bandet i et 1 til 1 forhold. Når prøven var ferdig ble den vaska raskt i dH20. Den ble så lagt i et kar med MemCode Sensitizer i 2 min på shaker, den ble flytta videre til MemCode Reversible 1 min. Dette ble destain med å tilføre MemCode destain som ble brukt til å vaske raskt tre gonger. Før den ble lagt i karet med 1 til 1 løsningen som ble laget tidligere i 5 min, før den ble vaska i dH20 fire ganger. Når denne var vaska, ble det tatt bilde for å anslå størrelsen på prøven og så ble den lagt tilbake i væsken. Når vi veit kor posisjonene til brønnene er, kunne vi kutte vekk all overflødig membran. Når dette var gjort kunne vi legge prøvene i eraser/metanol blanding på shaker i 10 min. Vi avslutta dagen ved at prøven ble tilført Antibody(AB) og lagt i kjøleskap over natta. Da dette er et steg som skal være med på å «framkalle bilde», så mistenker vi at en gammal AB som ble brukt her kan være en påvirkende årsak til at det var problema med å få til et skikkelig bilde av protein konsentrasjonen på dag 3.
+
+### Dag 3:
+
+Etter at gelen hadde vert i AB løyning over natta så ble det grundig vaska med TBS-T over flere omganger. Før det ble tilsett mer AB i 2,5 prosent mel med TBS-T, der var prøven i 1 time i rom temperatur før den igjen ble vaska i flere omganger. Dette gjorde prøven klar for ECL, og tilsette Thermo super signal. De ulike prøvene ble lagt i denne løsning mellom forsøka på å ta bilde. Fra første bilde ble det klart at en sleit med å framkalle gode bilde, det ble prøvd flere ulike innstillinger uten at det var noe hjelp. Vi klarte til slutt å få fram bilder som vi kunne bruke til en viss analyse.
+
+## Resultata
+
+For kvantifisering og analyse av proteinekstraksjonen ble ImageJ brukt, sammen med Excel for å visualisere endringene i prøvematerialet. Ved normalisering av prøvematerialet kan vi se at kvaliteten i ekstraksjonen er varierende, men tilstrekkelig for å kvantifisere mål-protein (target protein).
+
+Ved kvantifisering av prøvematerialet ble ImageJ brukt for å måle intensitet og relativ tetthet i proteinet i prøven. Target protein ble markert i ImageJ og prosessert gjennom å utheve toppene fra prøvematerialet. Markert område ble konvertert til tall og eksportert til Excel.
+
+![](images/Skjermbilde%202023-11-15%20kl.%2016.00.36.png){width="256"}
+
+For analyse av resultatene ble Excel brukt, for å skjematisk framstille endringene i relativ tetthet av target protein. Her ble resultatene skjematisk satt opp for å sammenligne kontrollprøven med prøven etter intervensjons perioden.
+
+\newpage
+
+|                     | Control   | Treatment  |
+|---------------------|-----------|------------|
+| Standard            | 22241,296 | 23251,832  |
+| Protein of interest | 10818,752 | 14063,175  |
+| Standard ratio      | 1         | 1,04543512 |
+| Protein ratio       | 1         | 1,29988884 |
+| Standard r/protein  | 1         | 1,24339504 |
+
+Som figur 2 viser ser vi en økning i relativ tetthet av target protein etter intervensjons perioden.
+
+![](images/Skjermbilde%202023-11-15%20kl.%2017.38.29.png){width="588" height="361"}
+
+## Diskusjon
+
+Som vi ser ut i fra bilda vi har analysert, så er det ikke lett å lese fram de beste resultat ut i fra dette. Men som beskrive i resultat delen så er det ganske klart at til tross for dårlige bilde så er det en øke i target protein etter intervensjonen. De vi ikke veit hva type treningvintersesjon disse prøvene er henta fra er det vanskelig å sammenlikne disse med andre studier.
+
+Som beskrive i metoden er det flere ting plasser vi har avvik fra den opprinnelige protokollen. Det er ting som at vi har hatt en liten prøve fra starten, slik at vi på et tidspunkt i protokollen ikke hadde nok prøve til å følge mengda av prøve. Noe som kan være med på at vi ikke har klart å framkalle de beste bilda fra denne prøven og dermed ikke får så gode svar. Men vi brukte også en AB løsning som var flere år gammal, som er en viktig del av de siste delene av protokollen der gelen skal vaskest i denne flere ganger. En gammal AB kan foreksempel ha gjort at denne ikke er like spesifikk, og dermed ikke klarer å binde og finne fram til det den skal for å skape et bilde [@bass_overview_2017]. Tar vi dette med i tillegg til de nevnte småfeil og generelt liten trening i generelle ferdigheter i molekylær laben så kan dette være med på å forklare et dårlige resultat enn de vi håper på.
